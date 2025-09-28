@@ -1,85 +1,87 @@
 <!doctype html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>سياسة الخصوصية - Fasah Booking Helper</title>
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.6;padding:24px;max-width:900px;margin:auto;color:#111}
+    body{
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      line-height:1.8;
+      padding:24px;
+      max-width:900px;
+      margin:auto;
+      color:#111;
+      direction: rtl;
+      text-align: right;
+    }
     h1,h2{color:#0b5ed7}
-    pre{background:#f6f8fa;padding:12px;border-radius:6px;overflow:auto}
     a{color:#0b5ed7}
     .muted{color:#555;font-size:0.95rem}
   </style>
 </head>
 <body>
   <h1>سياسة الخصوصية — Fasah Booking Helper</h1>
-  <p class="muted">الصفحة سارية المفعول منذ: <strong>2025-09-26</strong></p>
+  <p class="muted">سارية المفعول منذ: <strong>2025-09-26</strong></p>
 
   <h2>مقدمة</h2>
   <p>
-    هذه الإضافة (Fasah Booking Helper) تُسهِل حجز مواعيد عبور الشاحنات على بوابة
-    <a href="https://fasah.zatca.gov.sa" target="_blank" rel="noopener">ZATCA Fasah</a>.
-    الهدف الوحيد من الإضافة هو تبسيط عملية الحجز للمستخدمين. لمزيد من المعلومات أو للاستفسارات تواصل معنا على: <strong><a href="mailto:[YOUR_EMAIL@example.com]">[YOUR_EMAIL@example.com]</a></strong>.
+    هذه الإضافة (Fasah Booking Helper) تُسهِّل حجز مواعيد عبور الشاحنات على بوابة 
+    <a href="https://fasah.zatca.gov.sa" target="_blank" rel="noopener">ZATCA Fasah</a>
+    وكذلك على
+    <a href="https://oga.fasah.sa" target="_blank" rel="noopener">OGA Fasah</a>.
+    الغرض الوحيد من الإضافة هو تبسيط عملية الحجز للمستخدمين.
+  </p>
+  <p>
+    لمزيد من المعلومات أو الاستفسارات يُمكنك التواصل معنا على: 
+    <strong><a href="mailto:m.hus.dev@gmail.com">m.hus.dev@gmail.com</a></strong>.
   </p>
 
-  <h2>ما البيانات التي نجمعها؟ / What data we collect</h2>
+  <h2>البيانات التي نقوم بجمعها</h2>
   <ul>
-    <li>لا نقوم بجمع أي بيانات شخصية على خوادمنا أو مشاركتها مع أطراف ثالثة.</li>
-    <li>كل البيانات التي تُستخدم لتعبئة النماذج أو تسهيل الحجز تبقى داخل متصفح المستخدم (local storage/extension storage) ما لم يصرّح المستخدم صراحة بإرسالها لمصدر خارجي. </li>
+    <li>لا نقوم بجمع أو تخزين أي بيانات شخصية على خوادمنا.</li>
+    <li>كل البيانات المستخدمة لتعبئة النماذج تبقى داخل متصفح المستخدم.</li>
   </ul>
 
-  <h2>الأذونات التي تطلبها الإضافة ولماذا / Permissions & Purpose</h2>
-  <p>
-    الإضافة تطلب بعض الأذونات لتعمل بشكل صحيح — نستخدمها فقط للغرض التالي:
-  </p>
+  <h2>الأذونات ولماذا نستخدمها</h2>
   <ul>
-    <li><strong>activeTab</strong> — للتفاعل مع صفحة Fasah المفتوحة حالياً لتنفيذ الحجز بعد موافقة المستخدم.</li>
-    <li><strong>host permission (https://fasah.zatca.gov.sa/*)</strong> — للسماح للإضافة بالعمل فقط على بوابة Fasah الرسمية وتلقّي / تعبئة الحقول المطلوبة.</li>
-    <li><strong>storage</strong> — لحفظ تفضيلات المستخدم محلياً (مثل تفاصيل الحقول المتكررة أو إعدادات الحجز).</li>
-    <li><strong>tabs</strong> و<strong>scripting</strong> — لاكتشاف تبويبات المتصفح المرتبطة بالموقع وحقن السكربت الضروري لأتمتة تعبئة النماذج عند موافقة المستخدم.
+    <li><strong>activeTab</strong> — للتفاعل مع صفحة Fasah المفتوحة عند تنفيذ عملية الحجز.</li>
+    <li><strong>host permissions</strong> — للإذن بالعمل على المواقع التالية فقط:  
+      <ul>
+        <li>https://fasah.zatca.gov.sa/*</li>
+        <li>https://oga.fasah.sa/*</li>
+      </ul>
     </li>
+    <li><strong>storage</strong> — لتخزين تفضيلات المستخدم محليًا (مثل بيانات متكررة).</li>
+    <li><strong>tabs و scripting</strong> — لاكتشاف تبويبات المتصفح وحقن السكربت اللازم لتعبئة النماذج.</li>
   </ul>
 
-  <h2>هل نستخدم Remote Code أو أطراف خارجية؟</h2>
+  <h2>هل نستخدم Remote Code؟</h2>
   <p>
-    الإضافة لا تقوم بتحميل كود تنفيذي (JavaScript) من خوادم خارجية أثناء التشغيل (no remote code) ما لم تُحدّث الإضافة عبر متجر Chrome. إذا اعتمدت نسخة مستقبلية على مكتبات من CDN فسيُذكر ذلك بصراحة في هذه الصفحة.
+    الإضافة لا تقوم بتحميل أكواد من مصادر خارجية أثناء التشغيل (no remote code) باستثناء التحديثات الرسمية عبر متجر Chrome.
   </p>
 
-  <h2>تخزين البيانات ومدة الاحتفاظ</h2>
+  <h2>تخزين البيانات</h2>
   <p>
-    أي إعدادات أو بيانات محفوظة تستخدم فقط داخل متصفح المستخدم. يمكنك حذف بيانات الإضافة من إعدادات المتصفح أو من واجهة الإضافة في أي وقت.
+    أي إعدادات تُحفظ محليًا فقط داخل متصفح المستخدم، ويمكن حذفها في أي وقت من إعدادات المتصفح.
   </p>
 
-  <h2>مشاركة البيانات مع طرف ثالث</h2>
-  <p>لا يتم مشاركة أي معلومات شخصية مع أطراف ثالثة. في حال حدوث تغيير بهذا الأمر سنُحدّث هذه الصفحة ونبلّغ المستخدمين.</p>
+  <h2>مشاركة البيانات</h2>
+  <p>
+    لا يتم مشاركة أي بيانات مع أطراف ثالثة.
+  </p>
 
   <h2>الأمان</h2>
   <p>
-    نتخذ احتياطات معقولة لحماية البيانات المخزنة محلياً. ومع ذلك، الإضافة تعمل داخل متصفح المستخدم وتعتمد على أمان المتصفح ونظام التشغيل.
+    يتم الاعتماد على أمان المتصفح ونظام التشغيل في حماية بياناتك المحلية.
   </p>
 
-  <h2>حقوق المستخدمين</h2>
+  <h2>التغييرات</h2>
   <p>
-    يمكنك طلب حذف أو تعديل أي بيانات محفوظة محلياً أو الحصول على مزيد من المعلومات عن طريق مراسلتنا على الإيميل أعلاه.
-  </p>
-
-  <h2>التغييرات على سياسة الخصوصية</h2>
-  <p>
-    سنقوم بتحديث هذه الصفحة عند أي تغيّر جوهري في طريقة معالجة البيانات. تاريخ السريان مذكور أعلى الصفحة.
+    سنقوم بتحديث هذه الصفحة في حال حدوث أي تغييرات مهمة في طريقة عمل الإضافة أو التعامل مع البيانات.
   </p>
 
   <hr />
-  <p class="muted">
-    مراجع ومصادر توجيهية:
-    <ul>
-      <li><a href="https://developer.chrome.com/docs/webstore/cws-dashboard-privacy" target="_blank" rel="noopener">Chrome Web Store — Fill out the privacy fields</a></li>
-      <li><a href="https://developer.chrome.com/docs/webstore/program-policies" target="_blank" rel="noopener">Chrome Web Store — Developer Program Policies</a></li>
-      <li><a href="https://www.termsfeed.com/blog/browser-extension-privacy-policy/" target="_blank" rel="noopener">Guide: Privacy Policy for Browser Extensions (TermsFeed)</a></li>
-      <li><a href="https://gdpr.eu/data-privacy/" target="_blank" rel="noopener">GDPR — Data privacy guidance (overview)</a></li>
-    </ul>
-  </p>
-
   <p class="muted">آخر تحديث: 2025-09-26</p>
 </body>
 </html>
